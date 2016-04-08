@@ -1,0 +1,24 @@
+[user]
+	name = basandlin
+	email = bsandlin@novetta.com
+[push]
+	default = simple
+[alias]
+        st = status
+        cm = commit
+        in = fetch --dry-run
+        co = checkout
+        cob = checkout -b
+        br = branch -av
+        bd = branch --delete
+        cb = !git branch --no-color 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'
+        pl = pull
+	pr = pull --rebase
+        ps = push
+	pb = !git push origin `git cb`
+        d = diff
+        dc = diff --cached
+        r = remote
+	su = submodule update
+[color]
+	ui=auto
