@@ -22,3 +22,4 @@
 	su = submodule update
 [color]
 	ui=auto
+[url "https://github"]

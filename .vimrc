@@ -1,23 +1,25 @@
 set t_Co=256
 set number
 
-inore hh <esc>
-nnore ; :
-vnore ; :
-nnore ,h :sp <cr>
-nnore ,s :vsp <cr>
-nnore ,t :tab sp <cr>
-nnore ,vi :tabe ~/.vimrc<cr>
-nnore ,sv :so ~/.vimrc<cr>
-nnore ,ba :tabe ~/.bashrc<cr>
-nnore ,sb :so ~/.bashrc<cr>
-nnore U :syntax sync fromstart<cr>:redraw!<cr>
+inoremap jj <esc>
+nnoremap ; :
+vnoremap ; :
+nnoremap ,h :sp <cr>
+nnoremap ,s :vsp <cr>
+nnoremap ,t :tab sp <cr>
+nnoremap ,vi :tabe ~/.vimrc<cr>
+nnoremap ,sv :so ~/.vimrc<cr>
+nnoremap ,ba :tabe ~/.bashrc<cr>
+nnoremap ,sb :so ~/.bashrc<cr>
+nnoremap U :syntax sync fromstart<cr>:redraw!<cr>
+nnoremap ,r :CtrlPMRUFiles<CR>
+nnoremap ,p :CtrlP<CR>
 "Ctrl-ArrowKeys = move between splits
 
-nnore <C-Left> <C-W><left>
-nnore <C-Right> <C-W><right>
-nnore <C-Up> <C-W><up>
-nnore <C-Down> <C-W><down>
+nnoremap <C-H> <C-W><H>
+nnoremap <C-L> <C-W><L>
+nnoremap <C-K> <C-W><K>
+nnoremap <C-J> <C-W><J>
 " Backups {{{
 " (thanks Steve Losh)
 set backup
@@ -27,6 +29,10 @@ set undofile
 set undodir=~/.vim/tmp/undo//
 set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
+"displays filename on bottom line
+set laststatus=2
+"turns tabs into spaces
+set expandtab
 
 " Make those folders automatically if they don't already exist.
 if !isdirectory(expand(&undodir))
