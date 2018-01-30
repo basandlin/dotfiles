@@ -15,21 +15,14 @@ alias ....='cd ../../..'
 source ~/.git-completion.bash
 
 # for work
-export HIGHBEAMS_SETTINGS="/opt/searchlight/searchlight/settings.py"
 alias e='cd /opt/empty-canyon/'
-alias g='cd /opt/empty-canyon/spotlight/static/javascripts/nma'
+alias lc='cd /opt/lenz-controls/'
+alias j='cd /opt/empty-canyon/spotlight/static/javascripts'
+alias n='cd /opt/empty-canyon/spotlight/static/javascripts/nma'
 alias gs='gulp styles'
+alias gl='gulp lint'
+alias gv='gulp verify'
 alias i='cd /opt/empty-canyon/etc/instance'
-alias int='cd /opt/empty-canyon/spotlight/integration'
-alias display='Xvfb :10 -ac &'
-alias nt='python3 -m "nose"'
-
-export http_proxy=http://10.2.0.123:8888
-export https_proxy=http://10.2.0.123:8888
-export ftp_proxy=http://10.2.0.123:8888
-export no_proxy="localhost, 127.0.0.1, 10.2.0.28"
-
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-        . /etc/bashrc
-fi
+alias p='cd /opt/empty-canyon/etc/projects'
+alias d='cd /opt/empty-canyon/etc/datasources'
+alias l='cd /opt/empty-canyon/etc/load_scripts'
