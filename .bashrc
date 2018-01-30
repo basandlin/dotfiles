@@ -12,8 +12,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-source ~/.git-completion.bash
-
 # for work
 alias e='cd /opt/empty-canyon/'
 alias lc='cd /opt/lenz-controls/'
