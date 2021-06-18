@@ -1,6 +1,6 @@
 [user]
 	name = basandlin
-	email = bsandlin@novetta.com
+	email = brileysandlin@gmail.com
 [push]
 	default = simple
 [alias]
@@ -13,9 +13,10 @@
         bd = branch --delete
         cb = !git branch --no-color 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'
         pl = pull
-	pr = pull --rebase
+	pr = pull --rebase origin master
         ps = push
 	pb = !git push origin `git cb`
+	pf = !git push origin `git cb` -f
         d = diff
         dc = diff --cached
         r = remote
